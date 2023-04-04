@@ -65,7 +65,7 @@
           class="h-[100%] p-6 w-[240px] fixed z-50 bg-black"
         >
           <RouterLink to="/">
-            <img width="125" src="/public/images/icons/spotify-logo.png"> 
+            <img width="125" src="/images/icons/spotify-logo.png"> 
           </RouterLink>
           <div class="my-8"></div>
           <ul>
@@ -83,9 +83,32 @@
             <MenuItem class="-ml-[1px]" :iconSize="27" name="Liked Songs" iconString="liked" pageUrl="/liked"/>
           </ul>
           <div class="border-b border-b-gray-700"></div>
+          <ul>
+            <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">My playlist 1</li>
+            <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">My playlist 2</li>
+            <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">My playlist 3</li>
+            <li class="font-semibold text-[13px] mt-3 text-gray-300 hover:text-white">My playlist 4</li>
+          </ul>
         </div>
 
+        <div
+          class="
+            fixed
+            right-0
+            top-0
+            w-[calc(100%-240px)]
+            overflow-auto
+            h-full
+            bg-gradient-to-b
+            from-[#1C1C1C]
+            to-black
+          "
+        >
 
+          <div class="m-[70px]"></div>
+          <RouterView />
+          <div class="mb-[100px]"></div>
+        </div>
 
 
   </div>
