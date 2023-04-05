@@ -15,6 +15,16 @@
 
     const { track, artist, index } = toRefs(props)
 
+    onMounted (() => {
+        const audio = new Audio(track.value.path);
+        audio.addEventListener('loadedmetadata', function() {
+            const duration = audio.duration;
+            const minutes = Math.floor(duration / 60);
+            const seconds = Math.floor(duration % 60);
+            isTrackTime.value = minutes+':'+seconds.toString().padStart(2,'0')
+        })
+    })
+
 
 </script>
 
@@ -25,9 +35,31 @@
         @mouseleave="isHover = false"
     >
         <div class="flex items center w-full">
-            <div class="w-[40px] ml-[14px] mr-[6px] cursor-pointer">
+            <div v-if="isHover" class="w-[40px] ml-[14px] mr-[6px] cursor-pointer">
                 <Play v-if="true" fillColor="#FFFFFF" :size="25" />
                 <Pause v-else follColor="#FFFFFF" :size="25" />
+            </div>
+            <div v-else class="text-white font-semibold w-[40px] ml-5">
+                <span>
+                    {{ index }}
+                </span>
+            </div>
+            <div>
+                <div class="text-white font-semibold">
+                    {{  track.name  }}
+                </div>
+                <div class="text-sm font-semibold text-gray-400">{{ artist.name }}</div>
+            </div>
+        </div>
+        <div class="flex items-center">
+            <button type="button" v-if="isHover">
+                <Heart fillColor="#1BD760" :size="22"/>
+            </button>
+            <div
+                v-if="isTrackTime"
+                class="text-xs mx-5 text-gray-400"
+            >
+                {{  isTrackTime }}
             </div>
         </div>
     </li>
