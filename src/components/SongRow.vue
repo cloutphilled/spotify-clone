@@ -14,10 +14,21 @@
     })
 
     const { track, artist, index } = toRefs(props)
+
+
 </script>
 
 <template>
-    <div>
-
-    </div>
+    <li
+        class="flex items-center justify-between rounded-md hover:bg-[#2A2929]"
+        @mouseenter="isHover = true"
+        @mouseleave="isHover = false"
+    >
+        <div class="flex items center w-full">
+            <div class="w-[40px] ml-[14px] mr-[6px] cursor-pointer">
+                <Play v-if="true" fillColor="#FFFFFF" :size="25" />
+                <Pause v-else follColor="#FFFFFF" :size="25" />
+            </div>
+        </div>
+    </li>
 </template>
