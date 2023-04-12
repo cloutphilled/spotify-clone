@@ -1,0 +1,53 @@
+{
+    "name": "Regarding Ambiguity",
+    "album": "Abyss",
+    "albumCover": "/images/albumCovers/abyss.jpg",
+    "releaseYear": "TBA",
+    "tracks": [
+        {
+            "id": 1,
+            "name": "Burned Out",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 2,
+            "name": "Wither Away",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 3,
+            "name": "Abyss I: Void",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 4,
+            "name": "Abyss II: Hollow",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 5,
+            "name": "Abyss III: Chaos",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 6,
+            "name": "Dawn",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 7,
+            "name": "Dusk",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 8,
+            "name": "Swim in Peace",
+            "path": "/songs/abyss/.mp3"
+        },
+        {
+            "id": 9,
+            "name": "Shell",
+            "path": "/songs/abyss/.mp3"
+        }        
+    ]
+}
