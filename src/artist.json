@@ -31,7 +31,7 @@
         },
         {
             "id": 6,
-            "name": "Laps",
+            "name": "Lapse",
             "path": "/songs/delude/06-lapse.mp3"
         },
         {
@@ -46,3 +46,4 @@
         }
     ]
 }
+
