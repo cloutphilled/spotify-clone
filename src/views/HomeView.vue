@@ -13,9 +13,9 @@
 
         <div class="py-1.5"></div>
         <div class="flex items-center">
-            <HomeCard image="../public/images/albumCovers/delude.png" title="Delude" subTitle="Telos" />
-            <HomeCard image="../public/images/albumCovers/abyss.jpg" title="Abyss" subTitle="Regarding Ambiguity"/>
-            <HomeCard class="md:block hidden" image="../public/images/albumCovers/flayed.png" title="Flayed" subTitle="Regarding Ambiguity"/>
+            <HomeCard image="../images/albumCovers/delude.png" title="Delude" subTitle="Telos" />
+            <HomeCard image="../images/albumCovers/abyss.jpg" title="Abyss" subTitle="Regarding Ambiguity"/>
+            <HomeCard class="md:block hidden" image="../images/albumCovers/flayed.png" title="Flayed" subTitle="Regarding Ambiguity"/>
             <HomeCard class="lg:block hidden" image="https://picsum.photos/id/67/300/300" title="2" subTitle="2"/>
             <HomeCard class="xl:block hidden" image="https://picsum.photos/id/100/300/300" title="2" subTitle="2"/>
         </div>
